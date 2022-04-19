@@ -181,38 +181,3 @@ class elm():
             self.test_score = np.sqrt(np.sum((self.result - self.y) * (self.result - self.y))/self.y.shape[0])
 
         return self.test_score
-
-# if __name__ == '__main__':
-#     X_train, y_train, X_val, y_val = prepare_CIFAR10_images()
- 
-#     print('Train data shape: ', X_train.shape)
-#     print('Train labels shape: ', y_train.shape)
-#     print('Validation data shape: ', X_val.shape)
-#     print('Validation labels shape: ', y_val.shape)
- 
-#     input_size = 32 * 32 * 3
-#     num_classes = 10
-#     hidden_size = 1100
-#     num_iter = 5000
-#     batch_size = 100
-#     learning_rate = 0.001
-#     learning_rate_decay = 0.97
- 
-#     # built model and train
-#     model = elm(hidden_units=32, activation_function='relu', random_type='normal', x=X_train, y=y_train, C=0.1, elm_type='reg')
-#     beta, train_accuracy, running_time = model.fit('solution2')
-#     print("classifier beta:\n", beta)
-#     print("classifier train accuracy:", train_accuracy)
-#     print('classifier running time:', running_time)
-
-#     prediction = predict(X_val)
-
-#     for i in range(len(y_val)):
-#     print(f'Real:\t\t{y_val[i]}')
-#     print(f'Predicted:\t{prediction[i]}')
-#     print(f'Difference:\t{(y_val[i] - prediction[i])}')
-#     print()
-
-
-
-    
